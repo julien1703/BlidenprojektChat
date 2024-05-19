@@ -9,7 +9,6 @@
     <button onclick="capture()">Bild erfassen</button>
     <script>
         const video = document.getElementById('video');
-        // Aktivierung der Kamera
         if (navigator.mediaDevices.getUserMedia) {
             navigator.mediaDevices.getUserMedia({ video: true })
                 .then(function (stream) {
@@ -20,7 +19,6 @@
                 });
         }
 
-        // Funktion zum Erfassen des Bildes und Senden an den Server
         function capture() {
             const canvas = document.createElement('canvas');
             canvas.width = 640;
