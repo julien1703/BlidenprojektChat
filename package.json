@@ -1,14 +1,15 @@
 {
   "name": "blindenbrille",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "openai": "^4.47.1"
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "node-fetch": "^3.0.0",
+    "say": "^0.16.0"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
